@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conecta Vagas — Oportunidades para o Seu Futuro</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header id="inicio" class="topo">
+    <div class="container topo-flex">
+      <a href="#inicio" class="marca">
+        <span class="marca-titulo">Conecta Vagas</span>
+        <span class="marca-sub">Oportunidades para o seu futuro</span>
+      </a>
+      <nav aria-label="Navegação principal">
+        <ul class="menu">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#vagas">Vagas</a></li>
+          <li><a href="#dicas">Dicas</a></li>
+          <li><a href="#video">Vídeo</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="carrossel-secao" aria-label="Destaques do portal de vagas">
+      <div class="carrossel">
+        <button type="button" class="carrossel-btn anterior" id="btnAnterior" aria-label="Banner anterior">&lt;</button>
+        <div class="slide ativo">
+          <img src="img/1.webp" alt="Profissionais reunidos em ambiente de trabalho" />
+          <div class="slide-texto">
+            <h1>Conectando <span>Talentos e Oportunidades</span></h1>
+            <p>Consulte vagas demonstrativas em diferentes áreas e veja orientações para conquistar sua próxima colocação.</p>
+            <a href="#vagas" class="botao">Ver Vagas</a>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="img/2.webp" alt="Mentoria e orientação profissional para candidatos" />
+          <div class="slide-texto">
+            <h2>Prepare-se com Clareza</h2>
+            <p>Dicas diretas sobre currículo, entrevistas e evolução contínua no mercado de trabalho.</p>
+            <a href="#dicas" class="botao">Ver Dicas</a>
+          </div>
+        </div>
+        <button type="button" class="carrossel-btn proximo" id="btnProximo" aria-label="Próximo banner">&gt;</button>
+      </div>
+    </section>
+
+    <section id="dicas" class="diferenciais">
+      <div class="container">
+        <div class="grid-3">
+          <article class="card-info">
+            <h3>Dicas de Currículo</h3>
+            <p>Mantenha informações objetivas, destaque experiências relevantes e revise dados de contato antes de enviar.</p>
+          </article>
+          <article class="card-info">
+            <h3>Preparação para Entrevistas</h3>
+            <p>Conheça o perfil da vaga, prepare exemplos práticos de suas atividades e comunique-se com clareza.</p>
+          </article>
+          <article class="card-info">
+            <h3>Atualização Profissional</h3>
+            <p>Busque cursos curtos, projetos práticos e novos conhecimentos para acompanhar as demandas da área.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="vagas" class="secao">
+      <div class="container">
+        <div class="cabecalho-secao">
+          <div>
+            <h2>Vagas Demonstrativas</h2>
+            <p class="subtitulo">Exemplos ilustrativos de oportunidades para consulta</p>
+          </div>
+        </div>
+
+        <div class="grid-4">
+          <article class="card-conteudo">
+            <img src="img/3.webp" alt="Ilustração da vaga de Desenvolvedor Web" />
+            <div class="card-corpo">
+              <h3>Desenvolvedor Web</h3>
+              <p><strong>Área:</strong> Tecnologia</p>
+              <p><strong>Cidade:</strong> Muriaé — MG</p>
+              <p><strong>Modalidade:</strong> CLT</p>
+              <button type="button" class="botao-detalhes" data-alvo="det-dev">Ver detalhes</button>
+              <p id="det-dev" class="descricao-vaga" hidden>Atuação demonstrativa na construção e manutenção de páginas web com HTML, CSS e JavaScript.</p>
+            </div>
+          </article>
+
+          <article class="card-conteudo">
+            <img src="img/4.webp" alt="Ilustração da vaga de Assistente Administrativo" />
+            <div class="card-corpo">
+              <h3>Assistente Administrativo</h3>
+              <p><strong>Área:</strong> Administrativo</p>
+              <p><strong>Cidade:</strong> Vale do Glória — MG</p>
+              <p><strong>Modalidade:</strong> CLT</p>
+              <button type="button" class="botao-detalhes" data-alvo="det-adm">Ver detalhes</button>
+              <p id="det-adm" class="descricao-vaga" hidden>Rotina ilustrativa de organização de documentos, controle de planilhas e apoio ao atendimento interno.</p>
+            </div>
+          </article>
+
+          <article class="card-conteudo">
+            <img src="img/5.webp" alt="Ilustração da vaga de Auxiliar de Produção" />
+            <div class="card-corpo">
+              <h3>Auxiliar de Produção</h3>
+              <p><strong>Área:</strong> Indústria</p>
+              <p><strong>Cidade:</strong> Serra Nova — MG</p>
+              <p><strong>Modalidade:</strong> Efetivo</p>
+              <button type="button" class="botao-detalhes" data-alvo="det-prod">Ver detalhes</button>
+              <p id="det-prod" class="descricao-vaga" hidden>Apoio ilustrativo em linha de montagem, conferência de materiais e cumprimento de normas de segurança.</p>
+            </div>
+          </article>
+
+          <article class="card-conteudo">
+            <img src="img/6.webp" alt="Ilustração da vaga de Atendente de Suporte" />
+            <div class="card-corpo">
+              <h3>Atendente de Suporte</h3>
+              <p><strong>Área:</strong> Atendimento</p>
+              <p><strong>Cidade:</strong> Horizonte Azul — MG</p>
+              <p><strong>Modalidade:</strong> Híbrido</p>
+              <button type="button" class="botao-detalhes" data-alvo="det-atend">Ver detalhes</button>
+              <p id="det-atend" class="descricao-vaga" hidden>Registro ilustrativo de dúvidas de usuários, orientação inicial e acompanhamento de chamados.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="secao secao-alt">
+      <div class="container sobre-grid">
+        <div class="sobre-imagem">
+          <img src="img/7.webp" alt="Equipe comunitária do projeto Conecta Vagas" />
+        </div>
+        <div class="sobre-texto">
+          <h2>Sobre o Conecta Vagas</h2>
+          <p>O <strong>Conecta Vagas</strong> é uma iniciativa comunitária criada para facilitar o acesso de jovens e profissionais a informações organizadas sobre oportunidades de trabalho e preparação para o mercado.</p>
+          <p>As vagas exibidas neste portal têm caráter puramente demonstrativo e educativo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="video" class="secao">
+      <div class="container">
+        <h2>Dicas em Vídeo para Candidatos</h2>
+        <p class="subtitulo">Assista a orientações sobre postura profissional e carreira</p>
+        <div class="video-wrapper">
+          <iframe
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FgeQ45ErVrM?si=GgIDQrLfXv5pzv-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            title="Vídeo de dicas de carreira no Conecta Vagas"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="secao secao-alt">
+      <div class="container">
+        <h2>Contato</h2>
+        <div class="contato-box">
+          <p><strong>Iniciativa:</strong> Conecta Vagas — Orientação e Divulgação</p>
+          <p><strong>Cidade de referência:</strong> Muriaé — MG</p>
+          <p><strong>E-mail informativo:</strong> <a href="mailto:contato@conectavagas.exemplo.com">contato@conectavagas.exemplo.com</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-flex">
+      <div>
+        <strong>Conecta Vagas</strong> &copy; <span id="anoAtual">2026</span> — Todos os direitos reservados.
+      </div>
+      <ul class="rodape-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#vagas">Vagas</a></li>
+        <li><a href="#dicas">Dicas</a></li>
+        <li><a href="#video">Vídeo</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
